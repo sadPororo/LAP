@@ -4,7 +4,7 @@ This is a python implementation of our paper.
 
 
 
-## Environment Supports & Python Requirements
+## Environment supports & Python requirements
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04+-E95420?style=for-the-badge&logo=ubuntu&logoColor=E95420)
 ![Python](https://img.shields.io/badge/Python-3.8.8-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.12.0-%23EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=%23EE4C2C)   
@@ -23,14 +23,14 @@ $ conda install -c conda-forge ffmpeg
 Follow ```shell``` files from [/data/VoxCeleb](/data/VoxCeleb) ; [MUSAN](/data/MUSAN) ; [RIRs](/data/RIRs) to download and preprocess the datasets.  
 We use three datasets as follows:  
 
-**VoxCeleb 1 & 2**  
+* **VoxCeleb 1 & 2**  
   A. Nagrani, et al., “VoxCeleb: A large scale speaker identification dataset,” in _Proc. Interspeech_, 2017.  
   J. S. Chung, et al., “VoxCeleb2: Deep speaker recognition,” in _Proc. Interspeech_, 2018.
   
-**MUSAN**  
+* **MUSAN**  
   D. Snyder, et al., “MUSAN: A Music, Speech, and Noise Corpus,” arXiv, 2015.  
 
-**Room Impulse Response and Noise Database (RIRs)**  
+* **Room Impulse Response and Noise Database (RIRs)**  
   T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
 
 
