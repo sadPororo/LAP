@@ -10,7 +10,7 @@ This is a Python implementation of our paper.
 * We recommend you to visit [Previous Versions (v1.12.0)](https://pytorch.org/get-started/previous-versions/#v1120) for **PyTorch** installation including torchaudio==0.12.0.
 
 Use the [requirements.txt](/requirements.txt) to install the rest of the Python dependencies.   
-**Ubuntu-Soundfile** and **conda-ffmpeg** packages would be required for downloading and preprocessing data, and you can install them as:
+**Ubuntu-Soundfile** and **conda-ffmpeg** packages would be required for downloading and preprocessing datasets, and you can install them as:
 
 ```bash
 $ pip install -r requirements.txt
