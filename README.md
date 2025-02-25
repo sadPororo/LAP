@@ -9,3 +9,24 @@ This is a python implementation of our paper.
 ![Python](https://img.shields.io/badge/Python-3.8.8-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.12.0-%23EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=%23EE4C2C)   
 * We recommend you to visit [Previous Versions (v1.12.0)](https://pytorch.org/get-started/previous-versions/#v1120) for **PyTorch** installation including torchaudio==0.12.0.
+
+Use the [requirements.txt](/requirements.txt) to install the rest of the Python dependencies.   
+**Ubuntu-Soundfile** and **conda-ffmpeg** packages would be required for downloading and preprocessing data, and you can install them as:
+
+```bash
+$ pip install -r requirements.txt
+$ apt-get install python3-soundfile
+$ conda install -c conda-forge ffmpeg
+```
+
+## 1. Dataset Preparation
+* **VoxCeleb 1 & 2**  
+  We use [clovaai/voxceleb_trainer](https://github.com/clovaai/voxceleb_trainer) to download VoxCeleb datasets, released under the MIT licence.  
+  Follow the data preparation script, till you convert the VoxCeleb 2 audio format ```aac(.m4a)``` into ```.wav``` file.
+
+
+## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+This repository is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
+
+Codes for the dataset preparation are referred from [clovaai/voxceleb_trainer](https://github.com/clovaai/voxceleb_trainer) repository.  
+"**AAMsoftmax_IntertopK_Subcenter**" class at [/src/loss.py](/src/loss.py) is adopted from [wenet-e2e/wespeaker/models/projections](https://github.com/wenet-e2e/wespeaker/blob/c9ec537b53fe1e04525be74b2550ee95bed3a891/wespeaker/models/projections.py#L243) with slight modifications.
