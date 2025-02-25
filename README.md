@@ -19,7 +19,7 @@ $ apt-get install python3-soundfile
 $ conda install -c conda-forge ffmpeg
 ```
 
-## 1. Dataset Preparation
+## Dataset Preparation
 Follow ```dataprep.sh``` files from [/data/VoxCeleb](/data/VoxCeleb) ; [MUSAN](/data/MUSAN) ; [RIRs](/data/RIRs) to download and preprocess the datasets.  
 We use three datasets as follows:  
 
@@ -32,6 +32,11 @@ We use three datasets as follows:
 
 * **Room Impulse Response and Noise Database (RIRs)**  
   >T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
+
+## Run Experiments
+Log files, model weights, and configurations will be saved under [/res](/res) directory.
+>The output folder will be created as ```local-YYYYMMDD-HHmmss``` format unless ```--neptune``` is passed.
+>To use **neptune.ai** logging, set your neptune configuration at [/configs/neptune/neptune.yaml](/configs/neptune/neptune.yaml) and add **--neptune** in the command line.
 
 
 ## Citation
