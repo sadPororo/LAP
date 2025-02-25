@@ -10,3 +10,4 @@ ruamel.yaml
 einops
 tqdm
 easydict
+ptflops
