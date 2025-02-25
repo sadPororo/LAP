@@ -20,7 +20,7 @@ $ conda install -c conda-forge ffmpeg
 ```
 
 ## 1. Dataset Preparation
-Follow ```shell``` files from [/data/VoxCeleb](/data/VoxCeleb) ; [MUSAN](/data/MUSAN) ; [RIRs](/data/RIRs) to download and preprocess the datasets.  
+Follow ```dataprep.sh``` files from [/data/VoxCeleb](/data/VoxCeleb) ; [MUSAN](/data/MUSAN) ; [RIRs](/data/RIRs) to download and preprocess the datasets.  
 We use three datasets as follows:  
 
 * **VoxCeleb 1 & 2**  
@@ -34,6 +34,8 @@ We use three datasets as follows:
   T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
 
 
+## Citation
+Currently in review process.
 
 ## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 This repository is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
