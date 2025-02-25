@@ -1,8 +1,7 @@
 # Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification (2025)
 
-This is a python implementation of our paper.
-
-
+This is a Python implementation of our paper.  
+> J. S. Kim, et al., “Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification,” preprint, 2025.
 
 ## Environment supports & Python requirements
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04+-E95420?style=for-the-badge&logo=ubuntu&logoColor=E95420)
@@ -23,20 +22,20 @@ $ conda install -c conda-forge ffmpeg
 Follow ```dataprep.sh``` files from [/data/VoxCeleb](/data/VoxCeleb) ; [MUSAN](/data/MUSAN) ; [RIRs](/data/RIRs) to download and preprocess the datasets.  
 We use three datasets as follows:  
 
-* **VoxCeleb 1 & 2**  
-  >A. Nagrani, et al., “VoxCeleb: A large scale speaker identification dataset,” in _Proc. Interspeech_, 2017.  
-  >J. S. Chung, et al., “VoxCeleb2: Deep speaker recognition,” in _Proc. Interspeech_, 2018.
+**VoxCeleb 1 & 2**  
+> A. Nagrani, et al., “VoxCeleb: A large scale speaker identification dataset,” in _Proc. Interspeech_, 2017.  
+> J. S. Chung, et al., “VoxCeleb2: Deep speaker recognition,” in _Proc. Interspeech_, 2018.
   
-* **MUSAN**  
-  >D. Snyder, et al., “MUSAN: A Music, Speech, and Noise Corpus,” arXiv, 2015.  
+**MUSAN**  
+> D. Snyder, et al., “MUSAN: A Music, Speech, and Noise Corpus,” arXiv, 2015.  
 
-* **Room Impulse Response and Noise Database (RIRs)**  
-  >T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
+**Room Impulse Response and Noise Database (RIRs)**  
+> T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
 
 ## Run Experiments
 Log files, model weights, and configurations will be saved under [/res](/res) directory.
->The output folder will be created as ```local-YYYYMMDD-HHmmss``` format unless ```--neptune``` is passed.  
->To use **neptune.ai** logging, set your neptune configuration at [/configs/neptune/neptune.yaml](/configs/neptune/neptune.yaml) and add ```--neptune``` in the command line.
+> The output folder will be created as ```local-YYYYMMDD-HHmmss``` format unless ```--neptune``` is passed.  
+> To use **neptune.ai** logging, set your neptune configuration at [/configs/neptune/neptune.yaml](/configs/neptune/neptune.yaml) and add ```--neptune``` in the command line.
 
 * General usage examples,
 ```bash
