@@ -35,9 +35,14 @@ We use three datasets as follows:
 
 ## Run Experiments
 Log files, model weights, and configurations will be saved under [/res](/res) directory.
->The output folder will be created as ```local-YYYYMMDD-HHmmss``` format unless ```--neptune``` is passed.
->To use **neptune.ai** logging, set your neptune configuration at [/configs/neptune/neptune.yaml](/configs/neptune/neptune.yaml) and add **--neptune** in the command line.
+>The output folder will be created as ```local-YYYYMMDD-HHmmss``` format unless ```--neptune``` is passed.  
+>To use **neptune.ai** logging, set your neptune configuration at [/configs/neptune/neptune.yaml](/configs/neptune/neptune.yaml) and add ```--neptune``` in the command line.
 
+* General usage examples,
+```bash
+$ cd src
+$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py
+```
 
 ## Citation
 Currently in review process.
