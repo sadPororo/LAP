@@ -28,5 +28,5 @@ $ conda install -c conda-forge ffmpeg
 ## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 This repository is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
-Codes for the dataset preparation are referred from [clovaai/voxceleb_trainer](https://github.com/clovaai/voxceleb_trainer) repository.  
+We referred to [clovaai/voxceleb_trainer](https://github.com/clovaai/voxceleb_trainer) repository for the codes to prepare the datasets.
 "**AAMsoftmax_IntertopK_Subcenter**" class at [/src/loss.py](/src/loss.py) is adopted from [wenet-e2e/wespeaker/models/projections](https://github.com/wenet-e2e/wespeaker/blob/c9ec537b53fe1e04525be74b2550ee95bed3a891/wespeaker/models/projections.py#L243) with slight modifications.
