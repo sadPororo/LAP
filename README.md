@@ -35,22 +35,26 @@ Log files, model weights, and configurations will be saved under [/res](/res) di
   The experiment ID created at your **neptune.ai [project]** will be the name of the output directory.
 
 This framework supports six-phase model training/evaluation processes.
-**Phase (2)-(6)** requires passing "--evaluation" argument, 
-
-#### (1) Pre-training speaker network (backend) from scratch  
-This cold-start stage is hooked by ```--train_frozen``` argument given at the command line.
+If you are starting the process from **phase (2)-(6)**, you must pass the ```--evaluation``` argument to load model weights.  
+### (1) Pre-training speaker network (backend) from scratch  
+This cold-start stage is hooked by ```--train_frozen``` argument given at the command line.  
+The optimizer only updates the backend while the frontend remains frozen.
 ```bash
 # Example
 ~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_frozen
 ```
 
-#### (2) Joint fine-tuning of frontend and backend  
-Unfreeze the frontend weights
+### (2) Joint fine-tuning of frontend and backend networks  
+The second stage is hooked by ```--train_finetune``` argument given at the command line.  
+```bash
+# Example
+~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_finetune --evaluation_id EXP_ID
+```
 
-#### (3) Large-margin fine-tuning
-#### (4) Naive evaluation of 
-#### (5) Adaptive score normalization
-#### (6) Quality-aware score calibration
+### (3) Large-margin fine-tuning
+### (4) Naive evaluation of 
+### (5) Adaptive score normalization
+### (6) Quality-aware score calibration
 
 
 **General usage examples**
