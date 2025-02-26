@@ -34,14 +34,15 @@ Log files, model weights, and configurations will be saved under [/res](/res) di
 * To use **neptune.ai** logging, set your neptune configuration at [/src/config/neptune.yaml](/src/config/neptune.yaml) and add ```--neptune``` in the command line.  
   The experiment ID created at your **neptune.ai [project]** will be the name of the output directory.
 
+This framework supports six-phase model training/evaluation processes.
+#### (1) Pre-training speaker network from scratch
+
+
 **General usage examples**
 ```bash
 $ cd src
 $ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py
 ```
-
-This framework supports six-phase model training/evaluation processes.  
-* **(1) Pre-training speaker network from scratch**
 
 ## Citation
 > J. S. Kim, et al., “Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification,” preprint, 2025.  
