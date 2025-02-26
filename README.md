@@ -36,7 +36,7 @@ Log files, model weights, and configurations will be saved under [/res](/res) di
 
 This framework supports six-phase model training/evaluation processes.
 #### (1) Pre-training speaker network (backend) from scratch
-#### (2) Jointly fine-tuning of frontend and backend
+#### (2) Joint fine-tuning of frontend and backend
 #### (3) Large-margin fine-tuning
 #### (4) Naive evaluation of 
 #### (5) Adaptive score normalization
