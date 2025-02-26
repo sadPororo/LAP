@@ -43,16 +43,24 @@ The optimizer only updates the backend while the frontend remains frozen.
 # Example
 ~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_frozen
 ```
-
 ### (2) Joint fine-tuning of frontend and backend networks  
 The second stage is hooked by ```--train_finetune``` argument given at the command line.  
 ```bash
 # Example
 ~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_finetune --evaluation_id EXP_ID
 ```
-
 ### (3) Large-margin fine-tuning
-### (4) Naive evaluation of 
+The second stage is hooked by ```--train_lmft``` argument.  
+```bash
+# Example
+~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_lmft --evaluation_id EXP_ID
+```
+### (4) Naive evaluation
+Supports cosine-similarity measurement with substitution of speaker embedding mean vector.
+```bash
+# Example
+~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --naive_evaluation --evaluation_id EXP_ID
+```
 ### (5) Adaptive score normalization
 ### (6) Quality-aware score calibration
 
