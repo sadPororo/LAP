@@ -56,7 +56,7 @@ sample_rate: 16000
 data_path: '../data/VoxCeleb'   # about training set
 training_set: 'voxceleb2-dev'
 n_train_class: 5994
-speed_perturb: [1.0]  # about augmentations
+speed_perturb: [1.0]  # about speaker augmentations
 musan_path: '../data/MUSAN' 
 rir_path: '../data/RIRs'
 p_augment: 0.6
