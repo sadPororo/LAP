@@ -2,15 +2,13 @@
 # Common configurations
 # -----------------------------------------
 seed: 42
-ncpu: 4
+ncpu: 16
 epochs: 3
 keep_nbest: 3
 train_max_duration: 6.
 n_iter_per_epoch: 2000
 batch_size: 128
 grad_acc: 4
-# batch_size: 16 #  512: (16 x 32), (32 x 16), (64, 8)
-# grad_acc: 32   # 1024: (16 x 64), (32 x 32), (64, 16)
 verbose: True
 
 # -----------------------------------------
