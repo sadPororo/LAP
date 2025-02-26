@@ -98,7 +98,7 @@ keyword arguments:
 ```bash
 ~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
         --train_frozen --train_finetune --train_lmft --naive_evaluation --score_normalize --score_calibrate \
-        --description "one in a row experiment" --kwargs "--ncpu 16 --frontend_cfg microsoft/wavlm-base-plus" --neptune;
+        --description "one in a row" --kwargs "--ncpu 16 --n_head 12 --frontend_cfg microsoft/wavlm-base-plus" --neptune;
 
 ~/src$ python main.py --train_frozen --train_finetune \
         --description "if you start from --train_frozen phase, no need to pass --evaluation_id" --kwargs "--batch_size 128";
