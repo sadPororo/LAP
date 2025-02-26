@@ -86,7 +86,7 @@ optional arguments:
   -h, --help                      show this help message and exit
   --quick_check                   quick check for the running experiment on the modification, set as True if given
   --neptune                       log experiment with neptune logger, set as True if given
-  --description DESCRIPTION       user parameter for specifying certain version, Defaults to "Untitled".
+  --description   DESCRIPTION     user parameter for specifying certain version, Defaults to "Untitled".
   --evaluation_id EVALUATION_ID   previous output directory name to load model weights
 
 keyword arguments:
