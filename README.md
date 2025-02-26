@@ -56,7 +56,7 @@ If you are starting the process from **phase 2-6**, you must pass the ```--evalu
 # Example
 ~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_lmft --evaluation_id 'EXP_ID'
 ```
-  4. **Naive evaluation** (hooked by ```--naive_evaluation```)  
+  4. **Naive evaluation** (```--naive_evaluation```)  
      Supports cosine-similarity measurement with substitution of training speaker-embedding mean vector.  
   5. **Adaptive score normalization** (```--score_normalize```)  
      Produces normalized score of the verification trial given cohort speakers  
