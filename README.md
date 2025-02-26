@@ -1,6 +1,5 @@
 # Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification (2025)
-
-This is a Python implementation of our paper.  
+We share the python implementation of our paper here.  
 
 ## Environment supports & Python requirements
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04+-E95420?style=for-the-badge&logo=ubuntu&logoColor=E95420)
