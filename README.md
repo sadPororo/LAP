@@ -57,13 +57,12 @@ The second stage is hooked by ```--train_lmft``` argument.
 ```
 ### (4) Naive evaluation
 Supports cosine-similarity measurement with substitution of speaker embedding mean vector.
-```bash
-# Example
-~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --naive_evaluation --evaluation_id EXP_ID
-```
 ### (5) Adaptive score normalization
 ### (6) Quality-aware score calibration
-
+```bash
+# Example of evaluation phases applied in one go.
+~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --naive_evaluation --score_normalize --score_calibrate --evaluation_id EXP_ID
+```
 
 **General usage examples**
 ```bash
