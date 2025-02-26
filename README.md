@@ -23,10 +23,10 @@ Follow ```dataprep.sh``` files from [/data/VoxCeleb](/data/VoxCeleb) ; [MUSAN](/
 * **VoxCeleb 1 & 2** [1,2]  
 * **MUSAN** [3]  
 * **Room Impulse Response and Noise Database (RIRs)** [4]  
-> [1] A. Nagrani, et al., “VoxCeleb: A large scale speaker identification dataset,” in _Proc. Interspeech_, 2017.  
-> [2] J. S. Chung, et al., “VoxCeleb2: Deep speaker recognition,” in _Proc. Interspeech_, 2018.    
-> [3] D. Snyder, et al., “MUSAN: A Music, Speech, and Noise Corpus,” arXiv, 2015.  
-> [4] T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
+> [1]&nbsp;&nbsp; A. Nagrani, et al., “VoxCeleb: A large scale speaker identification dataset,” in _Proc. Interspeech_, 2017.  
+> [2]&nbsp;&nbsp; J. S. Chung, et al., “VoxCeleb2: Deep speaker recognition,” in _Proc. Interspeech_, 2018.    
+> [3]&nbsp;&nbsp; D. Snyder, et al., “MUSAN: A Music, Speech, and Noise Corpus,” arXiv, 2015.  
+> [4]&nbsp;&nbsp; T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
 
 ## Run Experiments
 Log files, model weights, and configurations will be saved under [/res](/res) directory.
@@ -35,7 +35,8 @@ Log files, model weights, and configurations will be saved under [/res](/res) di
   The experiment ID created at your **neptune.ai [project]** will be the name of the output directory.
 
 This framework supports six-phase model training/evaluation processes.
-#### (1) Pre-training speaker network (backend) from scratch
+#### (1) Pre-training speaker network (backend) from scratch  
+  During this stage, the frontend parameters will be fixed.
 #### (2) Joint fine-tuning of frontend and backend
 #### (3) Large-margin fine-tuning
 #### (4) Naive evaluation of 
