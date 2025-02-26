@@ -44,7 +44,7 @@ $ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py
 ```
 
 ## Citation
-Currently in review process.
+Currently in the review process.
 
 ## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 This repository is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
