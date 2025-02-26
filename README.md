@@ -60,7 +60,7 @@ Thanks to:
   adopted for the learning-rate scheduler **class CosineAnnealingWarmupRestarts** ([/src/utils/scheduler.py](/src/utils/scheduler.py)).
 
 * [https://github.com/espnet](https://github.com/espnet/espnet/blob/master/espnet2/layers/augmentation.py#L294)  
-  for the implementation of the **speaker augmentation** ([/src/utils/dataset.py](/src/utils/dataset.py))
+  for the implementation of the **speaker augmentation** ([/src/utils/dataset.py](/src/utils/dataset.py#L146))
 
 * [https://github.com/SeungjunNah/DeepDeblur-PyTorch](https://github.com/SeungjunNah/DeepDeblur-PyTorch/blob/master/src/data/sampler.py)  
   of the customized distributed sampler at the evaluation process **class DistributedEvalSampler** ([/src/utils/sampler.py](/src/utils/sampler.py))
