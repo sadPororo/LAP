@@ -40,6 +40,9 @@ $ cd src
 $ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py
 ```
 
+This framework supports six-phase model training/evaluation processes.  
+* **(1) Pre-training speaker network from scratch**
+
 ## Citation
 > J. S. Kim, et al., “Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification,” preprint, 2025.  
 ```bash
