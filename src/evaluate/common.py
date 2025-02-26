@@ -1,41 +1,24 @@
 
-#%%
 import os
-import copy
-import time
-import random
-import shutil
-# import itertools
 
 import torch
 import torch.nn as nn
-import torch.optim as optim
 import torch.nn.functional as F
 import torch.distributed as dist
 
-import soundfile as sf
-import numpy as np
 
 from model import SVmodel
 from torch.utils.data import Dataset, DataLoader
 from torch.nn.parallel import DistributedDataParallel as DDP
 # from torch.cuda.amp import autocast
 
-# from multiprocessing import Pool, freeze_support
-from sklearn.preprocessing import StandardScaler
 from utils.utility import hypwrite, hypload
 from utils.loggers import printlog
 from utils.dataset import EmbeddingExtractionDataset, load_voxceleb_corpus
 from utils.sampler import DistributedEvalSampler
-from utils.metrics import tuneThresholdfromScore, ComputeErrorRates, ComputeMinDcf
 from os.path import join as opj
 from typing import Union, Tuple
 from tqdm import tqdm
-
-from itertools import cycle, combinations, product
-from collections import OrderedDict
-
-import neptune
 
 
 
@@ -378,5 +361,3 @@ def get_cohort_corpus_embeddings(config:dict, model:Union[nn.Module, DDP]) -> di
             torch.save(cohort_mean_vec,          opj('../res', config.args.evaluation_id, f'best{n_best_models}_model', 'cohort_mean_vec.tensor'))
     
     return cohort_corpus_embeddings, cohort_mean_vec
-
-# %%
