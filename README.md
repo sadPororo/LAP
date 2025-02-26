@@ -51,10 +51,14 @@ This repository is released under the [MIT](https://choosealicense.com/licenses/
 
 Thanks to:
 * [https://github.com/clovaai/voxceleb_trainer](https://github.com/clovaai/voxceleb_trainer)  
-  referred to the data preparation codes.
+  referred to the data preparation codes and adopted the code implementation of evaluation metrics ([/src/utils/metrics.py](/src/utils/metrics.py)).
   
 * [https://github.com/wenet-e2e/wespeaker](https://github.com/wenet-e2e/wespeaker/blob/c9ec537b53fe1e04525be74b2550ee95bed3a891/wespeaker/models/projections.py#L243)  
-  adopted the implementation for training loss **class [AAMsoftmax_IntertopK_Subcenter](/src/loss.py)** with slight modifications.
+  adopted the implementation for the training loss **class AAMsoftmax_IntertopK_Subcenter** ([/src/loss.py](/src/loss.py)) with slight modifications.
 
 * [https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup](https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup/blob/master/cosine_annealing_warmup/scheduler.py)  
-  adopted for the learning-rate scheduler **class [CosineAnnealingWarmupRestarts](/src/utils/scheduler.py)**.
+  adopted for the learning-rate scheduler **class CosineAnnealingWarmupRestarts** ([/src/utils/scheduler.py](/src/utils/scheduler.py)).
+
+* [https://github.com/espnet](https://github.com/espnet/espnet/blob/master/espnet2/layers/augmentation.py#L294)  
+  for the implementation of the **speaker augmentation** ([/src/utils/dataset.py](/src/utils/dataset.py))
+
