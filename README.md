@@ -63,13 +63,13 @@ Thanks to:
   for the implementation of the **speaker augmentation** ([/src/utils/dataset.py](/src/utils/dataset.py))
 
 * [https://github.com/SeungjunNah/DeepDeblur-PyTorch](https://github.com/SeungjunNah/DeepDeblur-PyTorch/blob/master/src/data/sampler.py)  
-  of customized distributed sampler at the evaluation process **class DistributedEvalSampler** ([/src/utils/sampler.py](/src/utils/sampler.py))
+  of the customized distributed sampler at the evaluation process **class DistributedEvalSampler** ([/src/utils/sampler.py](/src/utils/sampler.py))
 
 * [https://github.com/lawlict/ECAPA-TDNN](https://github.com/lawlict/ECAPA-TDNN/blob/master/ecapa_tdnn.py)  
-  for the implementation of speaker model **class ECAPA_TDNN** ([/src/modules/speaker_networks/ecapa_tdnn.py](/src/modules/speaker_networks/ecapa_tdnn.py))
+  for the implementation of the speaker model **class ECAPA_TDNN** ([/src/modules/speaker_networks/ecapa_tdnn.py](/src/modules/speaker_networks/ecapa_tdnn.py))
 
 * [https://github.com/JunyiPeng00/SLT22_MultiHead-Factorized-Attentive-Pooling](https://github.com/JunyiPeng00/SLT22_MultiHead-Factorized-Attentive-Pooling)  
-  for the implementation of speaker model **class MHFA** ([/src/modules/speaker_networks/mhfa.py](/src/modules/speaker_networks/mhfa.py)) with some modification to fit this framework.
+  for the speaker model **class MHFA** ([/src/modules/speaker_networks/mhfa.py](/src/modules/speaker_networks/mhfa.py)) with some modifications to fit this framework.
 
 
   
