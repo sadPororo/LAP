@@ -1,0 +1,78 @@
+# -----------------------------------------
+# Common configurations
+# -----------------------------------------
+seed: 1031
+ncpu: 4
+epochs: 40
+keep_nbest: 2
+train_max_duration: 2.
+n_iter_per_epoch: -1
+batch_size: 512
+grad_acc: 1
+verbose: True
+
+# -----------------------------------------
+# Stochastic model average
+# -----------------------------------------
+apply_swa: False
+swa_lr: 0.00001
+swa_decay: 0.9
+swa_anneal_epochs: 5
+swa_anneal_strategy: 'linear'
+
+# -----------------------------------------
+# Frontend (backbone) model configurations
+# -----------------------------------------
+frontend_cfg: 'microsoft/wavlm-large'   # choices['facebook/wav2vec2-base', 'facebook/wav2vec2-large', 'facebook/wav2vec2-large-lv60', 'microsoft/wavlm-base', 'microsoft/wavlm-large']
+layer_aggregation: 'lap'                # choices['superb', 'lap']
+speaker_network: 'astp'                 # choices['x-vector', 'ecapa-tdnn', 'mhfa', 'astp']
+
+
+# ------------------------------------------------
+# Speaker embedding (pooling) model configurations
+# ------------------------------------------------
+hidden_size: 512  # Output dimension for LAP
+n_head: 16        
+dropout: 0.1
+embed_size: 192   # Output dimension for ASTP
+
+# ------------------------------------------------
+# AAM-softmax loss configurations
+# ------------------------------------------------
+margin_up_func: 'log'  # choices['log', 'exp', 'cos']
+margin_up_start: 0
+margin_up_epochs: 20
+margin: 0.3
+scale: 30.0
+n_subcenter: 3  # k-subcenters
+topK: 5         # Inter-top K penalty
+margin_penalty: 0.06
+
+# ------------------------------------------------
+# Adam - optimizer configurations
+# ------------------------------------------------
+lr: 0.001
+weight_decay: 0.00005
+max_norm: 9999. # gradient clipping
+
+# ------------------------------------------------
+# CosineAnnealingWarmupRestarts - scheduler configurations
+# ------------------------------------------------
+n_cycle: 1          # n_cycle for total training epochs
+warmup_ratio: 0.1   # decides steps to warmup
+cycle_mult: 1.
+max_lr: 0.001
+min_lr: 0.00001
+gamma: 1.0
+
+# ------------------------------------------------
+# Training data configuration
+# ------------------------------------------------
+sample_rate: 16000
+data_path: '../data/VoxCeleb'   # about training set
+training_set: 'voxceleb2-dev'
+n_train_class: 5994
+speed_perturb: [1.0, 1.0, 1.0, 0.9, 1.1]  # about speaker augmentation ratio
+musan_path: '../data/MUSAN' 
+rir_path: '../data/RIRs'
+p_augment: 0.6

@@ -1,0 +1,27 @@
+# ------------------------------------------------
+# commons
+# ------------------------------------------------
+seed: 42
+ncpu: 4
+sample_rate: 16000
+data_path: '../data/VoxCeleb'   # about training set
+save_embeddings: True
+verbose: True
+
+# ------------------------------------------------
+# Choose N-th best model from previous phase
+# ------------------------------------------------
+choose_topN: 1
+
+# ------------------------------------------------
+# model average
+# ------------------------------------------------
+n_best_models: 1
+
+# ------------------------------------------------
+# cohort dataset
+# ------------------------------------------------
+cohort_set: 'voxceleb2-dev'
+# cohort_size: 600    # not required at phase "naive_evaluation"
+cohort_batch_size: 64
+cohort_max_duration: null

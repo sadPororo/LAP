@@ -1,0 +1,55 @@
+# -----------------------------------------
+# Common configurations
+# -----------------------------------------
+seed: 1031
+ncpu: 4
+epochs: 20
+keep_nbest: 2
+train_max_duration: 2.
+n_iter_per_epoch: 2000
+batch_size: 512
+grad_acc: 1
+verbose: True
+
+# -----------------------------------------
+# Stochastic model average
+# -----------------------------------------
+apply_swa: False
+swa_lr: 0.000005
+swa_decay: 0.9
+swa_anneal_epochs: 4
+swa_anneal_strategy: 'linear'
+
+# ------------------------------------------------
+# Choose N-th best model from previous phase
+# ------------------------------------------------
+choose_topN: 1
+
+# ------------------------------------------------
+# Adam - optimizer configurations
+# ------------------------------------------------
+lr: 0.00005
+weight_decay: 0.00001
+max_norm: 9999.     # gradient clipping
+
+# ------------------------------------------------
+# CosineAnnealingWarmupRestarts - scheduler configurations
+# ------------------------------------------------
+n_cycle: 1          # n_cycle for total training epochs
+warmup_ratio: 0.1   # decides steps to warmup
+cycle_mult: 1.
+max_lr: 0.00005
+min_lr: 0.000005
+gamma: 0.75
+
+# ------------------------------------------------
+# Training data configuration
+# ------------------------------------------------
+sample_rate: 16000
+data_path: '../data/VoxCeleb'   # about training set
+training_set: 'voxceleb2-dev'
+n_train_class: 5994
+speed_perturb: [1.0]            # about speaker augmentation
+musan_path: '../data/MUSAN' 
+rir_path: '../data/RIRs'
+p_augment: 0.6
