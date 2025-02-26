@@ -1,7 +1,6 @@
 # Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification (2025)
 
-This is a Python implementation of our paper [1].  
-> [1] J. S. Kim, et al., “Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification,” preprint, 2025.
+This is a Python implementation of our paper.  
 
 ## Environment supports & Python requirements
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04+-E95420?style=for-the-badge&logo=ubuntu&logoColor=E95420)
@@ -21,13 +20,13 @@ $ conda install -c conda-forge ffmpeg
 ## Dataset Preparation
 Follow ```dataprep.sh``` files from [/data/VoxCeleb](/data/VoxCeleb) ; [MUSAN](/data/MUSAN) ; [RIRs](/data/RIRs) to download and preprocess the datasets.    
 
-* **VoxCeleb 1 & 2** [2,3]  
-* **MUSAN** [4]  
-* **Room Impulse Response and Noise Database (RIRs)** [5]  
-> [2] A. Nagrani, et al., “VoxCeleb: A large scale speaker identification dataset,” in _Proc. Interspeech_, 2017.  
-> [3] J. S. Chung, et al., “VoxCeleb2: Deep speaker recognition,” in _Proc. Interspeech_, 2018.    
-> [4] D. Snyder, et al., “MUSAN: A Music, Speech, and Noise Corpus,” arXiv, 2015.  
-> [5] T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
+* **VoxCeleb 1 & 2** [1,2]  
+* **MUSAN** [3]  
+* **Room Impulse Response and Noise Database (RIRs)** [4]  
+> [1] A. Nagrani, et al., “VoxCeleb: A large scale speaker identification dataset,” in _Proc. Interspeech_, 2017.  
+> [2] J. S. Chung, et al., “VoxCeleb2: Deep speaker recognition,” in _Proc. Interspeech_, 2018.    
+> [3] D. Snyder, et al., “MUSAN: A Music, Speech, and Noise Corpus,” arXiv, 2015.  
+> [4] T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
 
 ## Run Experiments
 Log files, model weights, and configurations will be saved under [/res](/res) directory.
@@ -42,6 +41,7 @@ $ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py
 ```
 
 ## Citation
+> J. S. Kim, et al., “Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification,” preprint, 2025.  
 ```bash
 The work is currently being reviewed.
 ```
