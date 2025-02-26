@@ -1,6 +1,6 @@
 # Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification (2025)
 
-This is a Python implementation of our paper.  
+This is a Python implementation of our paper [1].  
 > [1] J. S. Kim, et al., “Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification,” preprint, 2025.
 
 ## Environment supports & Python requirements
@@ -19,25 +19,21 @@ $ conda install -c conda-forge ffmpeg
 ```
 
 ## Dataset Preparation
-Follow ```dataprep.sh``` files from [/data/VoxCeleb](/data/VoxCeleb) ; [MUSAN](/data/MUSAN) ; [RIRs](/data/RIRs) to download and preprocess the datasets.  
-We use three datasets as follows:  
+Follow ```dataprep.sh``` files from [/data/VoxCeleb](/data/VoxCeleb) ; [MUSAN](/data/MUSAN) ; [RIRs](/data/RIRs) to download and preprocess the datasets.    
 
-**VoxCeleb 1 & 2**  
+* **VoxCeleb 1 & 2** [2,3]  
+* **MUSAN** [4]  
+* **Room Impulse Response and Noise Database (RIRs)** [5]  
 > [2] A. Nagrani, et al., “VoxCeleb: A large scale speaker identification dataset,” in _Proc. Interspeech_, 2017.  
-> [3] J. S. Chung, et al., “VoxCeleb2: Deep speaker recognition,” in _Proc. Interspeech_, 2018.
-  
-**MUSAN**  
+> [3] J. S. Chung, et al., “VoxCeleb2: Deep speaker recognition,” in _Proc. Interspeech_, 2018.    
 > [4] D. Snyder, et al., “MUSAN: A Music, Speech, and Noise Corpus,” arXiv, 2015.  
-
-**Room Impulse Response and Noise Database (RIRs)**  
 > [5] T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
 
 ## Run Experiments
 Log files, model weights, and configurations will be saved under [/res](/res) directory.
-> The output folder will be created as ```local-YYYYMMDD-HHmmss``` format by default.
-> 
-> To use **neptune.ai** logging, set your neptune configuration at [/src/config/neptune.yaml](/src/config/neptune.yaml) and add ```--neptune``` in the command line.  
-> Then, the experiment ID created at your **neptune.ai [project]** will be the name of the output directory.
+* The output folder will be created as ```local-YYYYMMDD-HHmmss``` format by default.
+* To use **neptune.ai** logging, set your neptune configuration at [/src/config/neptune.yaml](/src/config/neptune.yaml) and add ```--neptune``` in the command line.  
+  The experiment ID created at your **neptune.ai [project]** will be the name of the output directory.
 
 **General usage examples**
 ```bash
