@@ -51,4 +51,4 @@ This repository is released under the [MIT](https://choosealicense.com/licenses/
 
 * The data preparation codes are referred from [https://github.com/clovaai/voxceleb_trainer](https://github.com/clovaai/voxceleb_trainer) repository.
 * The implementation of training loss **class [AAMsoftmax_IntertopK_Subcenter](/src/loss.py)** is adopted from [https://github.com/wenet-e2e/wespeaker](https://github.com/wenet-e2e/wespeaker/blob/c9ec537b53fe1e04525be74b2550ee95bed3a891/wespeaker/models/projections.py#L243) with slight modifications.
-* The learning-rate scheduler **class [CosineAnnealingWarmupRestarts](/src/utils/scheduler.py)** is adopted from [https://github.com/wenet-e2e/wespeaker](https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup/blob/master/cosine_annealing_warmup/scheduler.py) repository.
+* The learning-rate scheduler **class [CosineAnnealingWarmupRestarts](/src/utils/scheduler.py)** is adopted from [https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup](https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup/blob/master/cosine_annealing_warmup/scheduler.py) repository.
