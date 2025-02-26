@@ -9,8 +9,6 @@ train_max_duration: 2.
 n_iter_per_epoch: 2000
 batch_size: 512
 grad_acc: 1
-# batch_size: 32 #  512: (32 x 16), (64 x 8),  (128, 4)
-# grad_acc: 16   # 1024: (32 x 32), (64 x 16), (128, 8)
 verbose: True
 
 # -----------------------------------------
