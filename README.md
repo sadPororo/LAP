@@ -34,7 +34,7 @@ Log files, model weights, and configurations will be saved under [/res](/res) di
 * To use **neptune.ai** logging, set your neptune configuration at [/src/config/neptune.yaml](/src/config/neptune.yaml) and add ```--neptune``` in the command line.  
   The experiment ID created at your **neptune.ai [project]** will be the name of the output directory.
 
-This framework supports six-phase model training/evaluation processes.
+This framework supports six-phase model training/evaluation processes.  
 If you are starting the process from **phase (2)-(6)**, you must pass the ```--evaluation``` argument to load model weights.  
 ### (1) Pre-training speaker network (backend) from scratch  
 This cold-start stage is hooked by ```--train_frozen``` argument given at the command line.  
