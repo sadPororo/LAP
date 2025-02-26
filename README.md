@@ -35,7 +35,12 @@ Log files, model weights, and configurations will be saved under [/res](/res) di
   The experiment ID created at your **neptune.ai [project]** will be the name of the output directory.
 
 This framework supports six-phase model training/evaluation processes.
-#### (1) Pre-training speaker network from scratch
+#### (1) Pre-training speaker network (backend) from scratch
+#### (2) Jointly fine-tuning of frontend and backend
+#### (3) Large-margin fine-tuning
+#### (4) Naive evaluation of 
+#### (5) Adaptive score normalization
+#### (6) Quality-aware score calibration
 
 
 **General usage examples**
