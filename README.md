@@ -62,3 +62,6 @@ Thanks to:
 * [https://github.com/espnet](https://github.com/espnet/espnet/blob/master/espnet2/layers/augmentation.py#L294)  
   for the implementation of the **speaker augmentation** ([/src/utils/dataset.py](/src/utils/dataset.py))
 
+* [https://github.com/SeungjunNah/DeepDeblur-PyTorch](https://github.com/SeungjunNah/DeepDeblur-PyTorch/blob/master/src/data/sampler.py)  
+  of customized distributed sampler at the evaluation process **class DistributedEvalSampler** ([/src/utils/sampler.py](/src/utils/sampler.py))
+
