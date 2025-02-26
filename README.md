@@ -34,8 +34,10 @@ We use three datasets as follows:
 
 ## Run Experiments
 Log files, model weights, and configurations will be saved under [/res](/res) directory.
-> The output folder will be created as ```local-YYYYMMDD-HHmmss``` format by default, unless ```--neptune``` is passed.  
-> To use **neptune.ai** logging, set your neptune configuration at [/src/config/neptune.yaml](/src/config/neptune.yaml) and add ```--neptune``` in the command line.
+> The output folder will be created as ```local-YYYYMMDD-HHmmss``` format by default.
+> 
+> To use **neptune.ai** logging, set your neptune configuration at [/src/config/neptune.yaml](/src/config/neptune.yaml) and add ```--neptune``` in the command line.  
+> Then, the experiment ID created at your **neptune.ai [project]** will be the name of the output directory.
 
 **General usage examples**
 ```bash
