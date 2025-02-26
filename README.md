@@ -90,13 +90,14 @@ optional arguments:
   --evaluation_id EVALUATION_ID   previous output directory name to load model weights
 
 keyword arguments:
-  --kwarg KWARG              dynamically modifies any of the hyperparameters declared in ../configs/.../...*.yaml or ./benchmarks/...*.yaml
-  (e.g.) --lr 0.001 --batch_size 64 --nb_total_step 25000 ...
+  --kwarg KWARG              dynamically modifies any of the hyperparameters defined at /src/config/*.yaml
+  (e.g.) "--batch_size 1024 --layer_aggregation lap --speaker_network astp --frontend_cfg microsoft/wavlm-base-plus"
 ```
 
 **Comprehensive Usage**
 ```bash
-~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py
+~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_frozen --train_finetune --train_lmft --naive_evaluation --score_normalize --score_calibrate \
+        --description "one in a row experiment" --kwargs "--ncpu 16 --n_head 12 --frontend_cfg microsoft/wavlm-base-plus" --neptune;
 ```
 
 ## Citation
