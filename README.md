@@ -57,10 +57,12 @@ If you are starting the process from **phase (2-6)**, you must pass the ```--eva
 ~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_lmft --evaluation_id 'EXP_ID'
 ```
   4. **Naive evaluation** (```--naive_evaluation```)  
-     Supports cosine-similarity measurement with substitution of training speaker-embedding mean vector.  
-  5. **Adaptive score normalization** (```--score_normalize```)  
-     Produces normalized score of the verification trial given cohort speakers  
-  6. **Quality-aware score calibration** (```--score_calibrate```)  
+     Supports cosine-similarity measurement with substitution of training speaker-embedding mean vector.
+     
+  6. **Adaptive score normalization** (```--score_normalize```)  
+     Produces normalized score of the verification trial given cohort speakers
+     
+  8. **Quality-aware score calibration** (```--score_calibrate```)  
      We implement a linear QMF model, which considers speech durations, embedding norms, and variance of embeddings.
 ```bash
 # Example of evaluation phases applied in one go.
