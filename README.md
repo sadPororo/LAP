@@ -34,6 +34,7 @@ Log files, model weights, and configurations will be saved under [/res](/res) di
 * To use **neptune.ai** logging, set your neptune configuration at [/src/config/neptune.yaml](/src/config/neptune.yaml) and add ```--neptune``` in the command line.  
   The experiment ID created at your **neptune.ai [project]** will be the name of the output directory.
 
+
 This framework supports six-phase model training/evaluation processes.  
 If you are starting the process from **phase (2-6)**, you must pass the ```--evaluation``` argument to load model weights.  
 
@@ -69,10 +70,33 @@ If you are starting the process from **phase (2-6)**, you must pass the ```--eva
 ~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --naive_evaluation --score_normalize --score_calibrate --evaluation_id 'EXP_ID'
 ```
 
-**General usage examples**
+**General options**
 ```bash
-$ cd src
-$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py
+~/src$ python main.py -h
+
+argument hooks:
+  --train_frozen
+  --train_finetune
+  --train_lmft
+  --naive_evaluation
+  --score_normalize
+  --score_calibrate
+
+optional arguments:
+  -h, --help                      show this help message and exit
+  --quick_check                   quick check for the running experiment on the modification, set as True if given
+  --neptune                       log experiment with neptune logger, set as True if given
+  --description DESCRIPTION       user parameter for specifying certain version, Defaults to "Untitled".
+  --evaluation_id EVALUATION_ID   previous output directory name to load model weights
+
+keyword arguments:
+  --kwarg KWARG              dynamically modifies any of the hyperparameters declared in ../configs/.../...*.yaml or ./benchmarks/...*.yaml
+  (e.g.) --lr 0.001 --batch_size 64 --nb_total_step 25000 ...
+```
+
+**Comprehensive Usage**
+```bash
+~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py
 ```
 
 ## Citation
