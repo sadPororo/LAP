@@ -94,10 +94,17 @@ keyword arguments:
   (e.g.) "--batch_size 1024 --layer_aggregation lap --speaker_network astp --frontend_cfg microsoft/wavlm-base-plus"
 ```
 
-**Comprehensive Usage**
+**Comprehensive usage examples**
 ```bash
-~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_frozen --train_finetune --train_lmft --naive_evaluation --score_normalize --score_calibrate \
-        --description "one in a row experiment" --kwargs "--ncpu 16 --n_head 12 --frontend_cfg microsoft/wavlm-base-plus" --neptune;
+~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
+        --train_frozen --train_finetune --train_lmft --naive_evaluation --score_normalize --score_calibrate \
+        --description "one in a row experiment" --kwargs "--ncpu 16 --frontend_cfg microsoft/wavlm-base-plus" --neptune;
+
+~/src$ python main.py --train_frozen --train_finetune \
+        --description "if you start from --train_frozen phase, no need to pass --evaluation_id" --kwargs "--batch_size 128";
+
+~/src$ python main.py --score_normalize --score_calibrate --evaluation_id "EXPID-00" \
+        --description "evaluation example" --kwargs "--cohort_size 400" --neptune;
 ```
 
 ## Citation
