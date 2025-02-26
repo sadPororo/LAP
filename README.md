@@ -48,13 +48,13 @@ If you are starting the process from **phase 2-6**, you must pass the ```--evalu
      The second stage is hooked by ```--train_finetune``` argument given at the command line.  
 ```bash
 # Example
-~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_finetune --evaluation_id EXP_ID
+~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_finetune --evaluation_id 'EXP_ID'
 ```
   3. **Large-margin fine-tuning**  
      The stage is hooked by ```--train_finetune``` argument  
 ```bash
 # Example
-~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_lmft --evaluation_id EXP_ID
+~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --train_lmft --evaluation_id 'EXP_ID'
 ```
   4. **Naive evaluation** (hooked by ```--naive_evaluation```)  
      Supports cosine-similarity measurement with substitution of training speaker-embedding mean vector.  
@@ -64,7 +64,7 @@ If you are starting the process from **phase 2-6**, you must pass the ```--evalu
      We implement a linear QMF model, which considers speech durations, embedding norms, and variance of embeddings.
 ```bash
 # Example of evaluation phases applied in one go.
-~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --naive_evaluation --score_normalize --score_calibrate --evaluation_id EXP_ID
+~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --naive_evaluation --score_normalize --score_calibrate --evaluation_id 'EXP_ID'
 ```
 
 **General usage examples**
