@@ -66,7 +66,7 @@ If you are starting the process from **phase (2-6)**, you must pass the ```--eva
      We implement a linear QMF model, which considers speech durations, embedding norms, and variance of embeddings.
 ```bash
 # Example of evaluation phases applied in one go.
-~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --naive_evaluation --score_normalize --score_calibrate --evaluation_id 'EXP_ID'
+~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --naive_evaluation --score_normalize --score_calibrate --evaluation_id 'EXPID'
 ```
 
 **General options**
@@ -95,6 +95,7 @@ keyword arguments:
 
 **Comprehensive usage examples**
 ```bash
+# This will create six neptune experiments; as "EXPID-00", "EXPID-01", "EXPID-02", ...; per phase argument passed.
 ~/src$ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
         --train_frozen --train_finetune --train_lmft --naive_evaluation --score_normalize --score_calibrate \
         --description "one in a row" --kwargs "--ncpu 16 --n_head 12 --frontend_cfg microsoft/wavlm-base-plus" --neptune;
