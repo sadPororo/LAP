@@ -6,11 +6,11 @@ We share the python implementation of our paper here.
 </p>
 
 The figure above describes the approaches to leverage multi-layer hidden states of pre-trained speech networks for speaker verification.   
-The approach (c) represents our methodology to exploit the pre-trained models.
+The approach **(c)** represents our methodology to exploit the pre-trained models.
 
-Below compares the 
+The below compares the layer-wise utilization from **WavLM-Base+** between the renowned SUPERB strategy (represented by (b) above) and our proposal (LAP).
 <p align="center">
-<img src="/fig/superb_vs_lap.png" width="300" height="500">
+<img src="/fig/superb_vs_lap.png" width="400" height="450">
 </p>
 
 ## Environment supports & Python requirements
