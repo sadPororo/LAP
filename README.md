@@ -1,6 +1,18 @@
 # Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification (2025)
 We share the python implementation of our paper here.  
 
+<p align="center">
+<img src="/fig/leveraging_multilayer_features.png" width="900" height="290">
+</p>
+
+The figure above describes the approaches to leverage multi-layer hidden states of pre-trained speech networks for speaker verification.   
+The approach (c) represents our methodology to exploit the pre-trained models.
+
+Below compares the 
+<p align="center">
+<img src="/fig/superb_vs_lap.png" width="300" height="500">
+</p>
+
 ## Environment supports & Python requirements
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04+-E95420?style=for-the-badge&logo=ubuntu&logoColor=E95420)
 ![Python](https://img.shields.io/badge/Python-3.8.8-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
