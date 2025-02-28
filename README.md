@@ -45,7 +45,7 @@ Log files, model weights, and configurations will be saved under [/res](/res) di
 
 
 This framework supports six-phase model training/evaluation processes.  
-If you are starting the process from **phase (2-6)**, you must pass the ```--evaluation``` argument to load model weights.  
+If starting from **phase (2-6)**, you must pass the ```--evaluation``` argument to load model weights.  
 
   1. **Pre-training speaker network (backend) from scratch**  
   This cold-start stage is hooked by ```--train_frozen``` argument given at the command line.  
