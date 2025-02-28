@@ -1,6 +1,5 @@
 # Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification (2025)
-We share the python implementation of our paper [1] here.  
-> [1]&nbsp;&nbsp; J. S. Kim, et al., “Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification,” preprint, 2025.  
+We share the python implementation of our paper here.  
 
 <p align="center">
 <img src="/fig/leveraging_multilayer_features.png" width="900" height="275">
@@ -30,13 +29,13 @@ $ conda install -c conda-forge ffmpeg
 ## Dataset Preparation
 Follow ```dataprep.sh``` files from [/data/VoxCeleb](/data/VoxCeleb) ; [MUSAN](/data/MUSAN) ; [RIRs](/data/RIRs) to download and preprocess the datasets.    
 
-* **VoxCeleb 1 & 2** [2,3]  
-* **MUSAN** [4]  
-* **Room Impulse Response and Noise Database (RIRs)** [5]  
-> [2]&nbsp;&nbsp; A. Nagrani, et al., “VoxCeleb: A large scale speaker identification dataset,” in _Proc. Interspeech_, 2017.  
-> [3]&nbsp;&nbsp; J. S. Chung, et al., “VoxCeleb2: Deep speaker recognition,” in _Proc. Interspeech_, 2018.    
-> [4]&nbsp;&nbsp; D. Snyder, et al., “MUSAN: A Music, Speech, and Noise Corpus,” arXiv, 2015.  
-> [5]&nbsp;&nbsp; T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
+* **VoxCeleb 1 & 2** [1,2]  
+* **MUSAN** [3]  
+* **Room Impulse Response and Noise Database (RIRs)** [4]  
+> [1]&nbsp;&nbsp; A. Nagrani, et al., “VoxCeleb: A large scale speaker identification dataset,” in _Proc. Interspeech_, 2017.  
+> [2]&nbsp;&nbsp; J. S. Chung, et al., “VoxCeleb2: Deep speaker recognition,” in _Proc. Interspeech_, 2018.    
+> [3]&nbsp;&nbsp; D. Snyder, et al., “MUSAN: A Music, Speech, and Noise Corpus,” arXiv, 2015.  
+> [4]&nbsp;&nbsp; T. Ko, et al., “A study on data augmentation of reverberant speech for robust speech recognition,” in _Proc. ICASSP_, 2017.
 
 ## Run Experiments
 Log files, model weights, and configurations will be saved under [/res](/res) directory.
