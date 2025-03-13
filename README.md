@@ -131,22 +131,22 @@ Thanks to:
   referred to the data preparation codes and adopted the code implementation of evaluation metrics ([/src/utils/metrics.py](/src/utils/metrics.py)).
   
 * [https://github.com/wenet-e2e/wespeaker](https://github.com/wenet-e2e/wespeaker/blob/c9ec537b53fe1e04525be74b2550ee95bed3a891/wespeaker/models/projections.py#L243)  
-  adopted the implementation for the training loss **class AAMsoftmax_IntertopK_Subcenter** ([/src/loss.py](/src/loss.py)) with slight modifications.
+  adopted the implementation for the training loss ```class AAMsoftmax_IntertopK_Subcenter``` ([/src/loss.py](/src/loss.py)) with slight modifications.
 
 * [https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup](https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup/blob/master/cosine_annealing_warmup/scheduler.py)  
-  adopted for the learning-rate scheduler **class CosineAnnealingWarmupRestarts** ([/src/utils/scheduler.py](/src/utils/scheduler.py)).
+  adopted for the learning-rate scheduler ```class CosineAnnealingWarmupRestarts``` ([/src/utils/scheduler.py](/src/utils/scheduler.py)).
 
 * [https://github.com/espnet](https://github.com/espnet/espnet/blob/master/espnet2/layers/augmentation.py#L294)  
-  for the implementation of the **speaker augmentation** ([/src/utils/dataset.py](/src/utils/dataset.py#L146))
+  for the implementation of the ```speaker augmentation``` ([/src/utils/dataset.py](/src/utils/dataset.py#L146))
 
 * [https://github.com/SeungjunNah/DeepDeblur-PyTorch](https://github.com/SeungjunNah/DeepDeblur-PyTorch/blob/master/src/data/sampler.py)  
-  of the customized distributed sampler at the evaluation process **class DistributedEvalSampler** ([/src/utils/sampler.py](/src/utils/sampler.py))
+  of the customized distributed sampler at the evaluation process ```class DistributedEvalSampler``` ([/src/utils/sampler.py](/src/utils/sampler.py))
 
 * [https://github.com/lawlict/ECAPA-TDNN](https://github.com/lawlict/ECAPA-TDNN/blob/master/ecapa_tdnn.py)  
-  for the implementation of the speaker model **class ECAPA_TDNN** ([/src/modules/speaker_networks/ecapa_tdnn.py](/src/modules/speaker_networks/ecapa_tdnn.py))
+  for the implementation of the speaker model ```class ECAPA_TDNN``` ([/src/modules/speaker_networks/ecapa_tdnn.py](/src/modules/speaker_networks/ecapa_tdnn.py))
 
 * [https://github.com/JunyiPeng00/SLT22_MultiHead-Factorized-Attentive-Pooling](https://github.com/JunyiPeng00/SLT22_MultiHead-Factorized-Attentive-Pooling)  
-  for the speaker model **class MHFA** ([/src/modules/speaker_networks/mhfa.py](/src/modules/speaker_networks/mhfa.py)) with some modifications to fit this framework.
+  for the speaker model ```class MHFA``` ([/src/modules/speaker_networks/mhfa.py](/src/modules/speaker_networks/mhfa.py)) with some modifications to fit this framework.
 
 
   
