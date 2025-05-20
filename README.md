@@ -1,4 +1,4 @@
-# Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification (2025)
+# Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification (Interspeech 2025)
 We share the python implementation of our paper here.  
 
 <p align="center">
