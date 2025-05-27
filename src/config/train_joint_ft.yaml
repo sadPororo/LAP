@@ -6,7 +6,7 @@ ncpu: 4
 epochs: 10
 keep_nbest: 2
 train_max_duration: 2.
-n_iter_per_epoch: 2000
+n_iter_per_epoch: -1
 batch_size: 512
 grad_acc: 1
 verbose: True
