@@ -118,9 +118,9 @@ keyword arguments:
 ```
 
 ## Citation
-> J. S. Kim, et al., “Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification,” preprint, 2025.  
+> J. S. Kim, et al., “Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification,” in _Proc. Interspeech_, 2025.  
 ```bash
-To be appear at 2025 Interspeech
+To appear in Interspeech 2025
 ```
 
 ## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
