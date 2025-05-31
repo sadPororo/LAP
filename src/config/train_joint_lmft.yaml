@@ -43,7 +43,7 @@ max_norm: 9999. # gradient clipping
 # CosineAnnealingWarmupRestarts - scheduler configurations
 # ------------------------------------------------
 n_cycle: 1          # n_cycle for total training epochs
-warmup_ratio: 0.15  # decides steps to warmup
+warmup_ratio: 0.1   # decides steps to warmup
 cycle_mult: 1.
 max_lr: 0.000005
 min_lr: 0.000005
