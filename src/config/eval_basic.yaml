@@ -23,5 +23,5 @@ n_best_models: 1
 # ------------------------------------------------
 cohort_set: 'voxceleb2-dev'
 # cohort_size: 600    # not required at phase "naive_evaluation"
-cohort_batch_size: 64
+cohort_batch_size: 1
 cohort_max_duration: null
