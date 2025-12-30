@@ -126,7 +126,7 @@ To appear in Interspeech 2025
 ## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 This repository is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
-Thanks to:
+_Thanks to:_  
 * [https://github.com/clovaai/voxceleb_trainer](https://github.com/clovaai/voxceleb_trainer)  
   referred to the data preparation codes and adopted the code implementation of evaluation metrics ([/src/utils/metrics.py](/src/utils/metrics.py)).
   
